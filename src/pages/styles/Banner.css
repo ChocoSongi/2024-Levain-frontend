@@ -1,0 +1,69 @@
+.Banner {
+    position: relative;
+    height: 260px;
+    width: 100%;
+    @media screen and (max-width: 768px){
+        height: 100px;
+    }
+}
+
+.BannerContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: BannerAnimation 10s infinite;
+    transition: all 0.4s ease-in-out;
+}
+
+.SecondBanner {
+    left: 100%;
+    animation-delay: -5s;
+}
+
+.BannerTitle {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    transform: translate(0, -50%);
+    @media screen and (max-width: 768px){
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 475px){
+        font-size: 1rem;
+    }
+}
+
+.fadeIn {
+    opacity: 1;
+    animation: fadeIn ease-in-out 1s;
+}
+
+.fadeOut {
+    opacity: 0;
+    animation: fadeOut ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

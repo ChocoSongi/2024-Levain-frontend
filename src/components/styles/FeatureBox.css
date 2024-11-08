@@ -1,0 +1,58 @@
+.FeatureBox {
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+    flex: 1 1 0;
+}
+
+.FeatureBoxTitleContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.FeatureBoxTitle {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 16px 0;
+    @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+    }
+}
+
+.FeatureBoxCheckBox {
+    display: none;
+}
+
+.FeatureBoxCheckBox + label {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.FeatureBoxCheckBox + label > .check {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 60%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FeatureBoxCheckBox:checked + label > .check {
+    display: inline-block;
+}
+
+.FeatureBoxDivider {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+}
