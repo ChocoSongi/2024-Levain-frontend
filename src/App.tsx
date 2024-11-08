@@ -17,7 +17,6 @@ function App() {
             <Banner/>
             <Section2/>
             <Section3/>
-            <Section3v1/>
         </div>
     );
 }
