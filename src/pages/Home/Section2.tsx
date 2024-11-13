@@ -1,9 +1,9 @@
 import React, {useEffect, useRef} from 'react';
 import './styles/Section2.css';
-import animation from "../utils/animation";
-import DiagonalArrowImage from "../assets/DiagonalArrow.svg"
-import GoogleButtonImage from "../assets/Google_btn.png";
-import AppleButtonImage from "../assets/Apple_btn.png";
+import animation from "../../utils/animation";
+import DiagonalArrowImage from "../../assets/DiagonalArrow.svg"
+import GoogleButtonImage from "../../assets/Google_btn.png";
+import AppleButtonImage from "../../assets/Apple_btn.png";
 
 function Section2() {
     const deviceRef = useRef<HTMLDivElement>(null);
@@ -39,10 +39,10 @@ function Section2() {
                         앱 하나로 손쉽게<br/>르방을 관리하세요
                     </span>
                     <div className="Section2DeviceButtonContainer">
-                        <a href="/">
+                        <a href="/public">
                             <img className="Section2DeviceButtonImg" src={GoogleButtonImage} alt={""}/>
                         </a>
-                        <a href="/">
+                        <a href="/public">
                             <img className="Section2DeviceButtonImg" src={AppleButtonImage} alt={""}/>
                         </a>
                     </div>

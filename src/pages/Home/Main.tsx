@@ -1,8 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './styles/Main.css';
-import MainImage from "../assets/Main1.png"
-import Main2Image from "../assets/Main2.png"
-import animation from "../utils/animation";
+import Main2Image from "../../assets/Main2.png"
+import animation from "../../utils/animation";
 
 function Main() {
     const mainTextRef = useRef<HTMLDivElement>(null);
@@ -27,7 +26,7 @@ function Main() {
                 <span className="Subtitle">자꾸 실패하는 르방 관리?</span>
                 <p className="Title">르방, 정답은 없지만<br/><span className="Highlight">오답</span>은 있다.</p>
             </div>
-            <a className="MainButton" href="/"><span className="MainButtonText">맞춤 르방 관리법 추천받기</span></a>
+            <a className="MainButton" href="/public"><span className="MainButtonText">맞춤 르방 관리법 추천받기</span></a>
         </div>
     );
 }

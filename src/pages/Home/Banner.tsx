@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './styles/Banner.css';
-import Banner1Image from "../assets/Banner1.png";
-import Banner2Image from "../assets/Banner2.png";
+import Banner1Image from "../../assets/Banner1.png";
+import Banner2Image from "../../assets/Banner2.png";
 
 function Banner() {
     const [isB1, setIsB1] = useState(true);

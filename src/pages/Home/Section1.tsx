@@ -1,10 +1,10 @@
 import React, {useEffect, useRef} from 'react';
 import './styles/Section1.css';
-import animation from "../utils/animation";
-import MapImage from "../assets/map.svg";
-import PositionImage from "../assets/position.svg";
-import ArrowImage from "../assets/arrow.svg";
-import DetailImage from "../assets/Details.png"
+import animation from "../../utils/animation";
+import MapImage from "../../assets/map.svg";
+import PositionImage from "../../assets/position.svg";
+import ArrowImage from "../../assets/arrow.svg";
+import DetailImage from "../../assets/Details.png"
 
 function Section1() {
     const reasonForFailSubtitleRef = useRef<HTMLDivElement>(null);

@@ -1,8 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './styles/Section3.css';
-import animation from "../utils/animation";
-import FeatureBox from "../components/FeatureBox";
-import DiagonalArrowImage from "../assets/DiagonalArrow.svg";
+import animation from "../../utils/animation";
+import FeatureBox from "../../components/FeatureBox";
+import DiagonalArrowImage from "../../assets/DiagonalArrow.svg";
 
 function Section3() {
     const deviceRef = useRef<HTMLDivElement>(null);
@@ -54,7 +54,7 @@ function Section3() {
                         <span className="MailBoxTitle">E-mail <span className="MailBoxTitleRequired">*</span></span>
                         <input className="MailInput" type="email"/>
                     </div>
-                    <a className="SendMailBtnTitle" href="/">
+                    <a className="SendMailBtnTitle" href="/public">
                         이메일 제출하기  <img src={DiagonalArrowImage} alt={""} width={12} height={12}/>
                     </a>
                 </div>

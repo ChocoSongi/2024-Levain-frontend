@@ -1,0 +1,73 @@
+.Footer {
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    overflow: hidden;
+}
+
+.FooterImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.FooterTextContainer {
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+
+}
+
+.FooterSubtitle {
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    @media screen and (max-width: 768px){
+        font-size: 1.2rem;
+    }
+}
+
+.FooterTitle {
+    text-wrap: nowrap;
+    color: black;
+    font-size: 3.8rem;
+    font-weight: bold;
+    margin: 0;
+    @media screen and (max-width: 768px){
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 475px){
+        font-size: 1.6rem;
+    }
+}
+
+.FooterHighlight {
+    color: #7B4A30;
+}
+
+.FooterButton {
+    width: fit-content;
+    padding: 24px 60px;
+    background-color: #7B4A30;
+    border-radius: 12px;
+    text-decoration: none;
+    @media screen and (max-width: 768px){
+        padding: 12px 30px;
+    }
+}
+
+.FooterButtonText {
+    text-wrap: nowrap;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    @media screen and (max-width: 768px){
+        font-size: 1rem;
+    }
+}
